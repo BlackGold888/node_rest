@@ -1,8 +1,9 @@
-const express = require('express')
+const express = require('express');
 const db = require('./models');
 const session = require('express-session');
+require('dotenv').config();
 
-const app = express()
+const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(express.urlencoded({extended: true}));
